@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:orientation="vertical"
+    tools:context="com.example.android.justjava.MainActivity">
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="8dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:text="Score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:padding="8dp"
+                android:textAllCaps="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textSize="20sp"
+                android:padding="8dp"
+                android:id="@+id/quiz_score"
+                />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="12dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Iceland is covered in Ice?"
+                android:textColor="#212121"
+                android:textSize="16sp"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <RadioButton
+                    android:id="@+id/qu_one_t"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="True"
+                    android:textSize="14sp"
+                    android:onClick="decrementCount"
+                    android:textAppearance="?android:textAppearanceMedium" />
+                <RadioButton
+                    android:id="@+id/qu_one_f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="False"
+                    android:textSize="14sp"
+                    android:onClick="incrementCount"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="12dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Which ocean lies on the east coast of the United States?"
+                android:textColor="#212121"
+                android:textSize="16sp"/>
+
+            <RadioGroup
+                android:id="@+id/qu_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <RadioButton
+                    android:id="@+id/q2_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Atlantic"
+                    android:textSize="15sp"
+                    android:onClick="incrementCount"
+                    android:textAppearance="?android:textAppearanceMedium" />
+                <RadioButton
+                    android:id="@+id/q2_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Indian"
+                    android:textSize="15sp"
+                    android:onClick="decrementCount"
+                    android:textAppearance="?android:textAppearanceMedium" />
+                <RadioButton
+                    android:id="@+id/q2_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Eastern"
+                    android:textSize="15sp"
+                    android:onClick="decrementCount"
+                    android:textAppearance="?android:textAppearanceMedium" />
+                <RadioButton
+                    android:id="@+id/q2_d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pacific"
+                    android:textSize="15sp"
+                    android:onClick="incrementCount"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="12dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" How many Great Lakes are there?"
+                android:textColor="#212121"
+                android:textSize="16sp"/>
+
+            <RadioGroup
+                android:id="@+id/qu_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <RadioButton
+                    android:id="@+id/q3_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6"
+                    android:textSize="15sp"
+                    android:onClick="decrementCount"
+                    android:textAppearance="?android:textAppearanceMedium" />
+                <RadioButton
+                    android:id="@+id/q3_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textSize="15sp"
+                    android:onClick="incrementCount"
+                    android:textAppearance="?android:textAppearanceMedium" />
+                <RadioButton
+                    android:id="@+id/q3_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:textSize="15sp"
+                    android:onClick="decrementCount"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_margin="12dp"-->
+            <!--&gt;-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text=" Which is the longest river in the U.S.?"-->
+                <!--android:textColor="#212121"-->
+                <!--android:textSize="16sp"/>-->
+
+            <!--<RadioGroup-->
+                <!--android:id="@+id/qu_four"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical"-->
+                <!--&gt;-->
+                <!--<RadioButton-->
+                    <!--android:id="@+id/q4_a"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Colorado River"-->
+                    <!--android:textSize="15sp"-->
+                    <!--android:onClick="decrementCount"-->
+                    <!--android:textAppearance="?android:textAppearanceMedium" />-->
+                <!--<RadioButton-->
+                    <!--android:id="@+id/q4_b"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Yukon River"-->
+                    <!--android:textSize="15sp"-->
+                    <!--android:onClick="decrementCount"-->
+                    <!--android:textAppearance="?android:textAppearanceMedium" />-->
+                <!--<RadioButton-->
+                    <!--android:id="@+id/q4_c"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Missouri River"-->
+                    <!--android:textSize="15sp"-->
+                    <!--android:onClick="incrementCount"-->
+                    <!--android:textAppearance="?android:textAppearanceMedium" />-->
+
+            <!--</RadioGroup>-->
+
+        <!--</LinearLayout>-->
+
+
+
+
+
+
+        <Button
+            android:id="@+id/button_id"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Check"
+            android:background="@color/colorPrimary"
+            android:textColor="#212121"
+            android:onClick="submitQuiz"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+</ScrollView>
