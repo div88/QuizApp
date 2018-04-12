@@ -15,35 +15,6 @@
 
 
         <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_margin="8dp"
-            android:gravity="center_horizontal">
-
-            <TextView
-                android:text="Score"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:padding="8dp"
-                android:textAllCaps="true"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:text="0"
-                android:textSize="20sp"
-                android:padding="8dp"
-                android:id="@+id/quiz_score"
-                />
-        </LinearLayout>
-
-
-
-        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -190,58 +161,120 @@
 
         </LinearLayout>
 
-        <!--<LinearLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:orientation="vertical"-->
-            <!--android:layout_margin="12dp"-->
-            <!--&gt;-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="12dp"
+            >
 
-            <!--<TextView-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:text=" Which is the longest river in the U.S.?"-->
-                <!--android:textColor="#212121"-->
-                <!--android:textSize="16sp"/>-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Which is the longest river in the U.S.?"
+                android:textColor="#212121"
+                android:textSize="16sp"/>
 
-            <!--<RadioGroup-->
-                <!--android:id="@+id/qu_four"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:orientation="vertical"-->
-                <!--&gt;-->
-                <!--<RadioButton-->
-                    <!--android:id="@+id/q4_a"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:text="Colorado River"-->
-                    <!--android:textSize="15sp"-->
-                    <!--android:onClick="decrementCount"-->
-                    <!--android:textAppearance="?android:textAppearanceMedium" />-->
-                <!--<RadioButton-->
-                    <!--android:id="@+id/q4_b"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:text="Yukon River"-->
-                    <!--android:textSize="15sp"-->
-                    <!--android:onClick="decrementCount"-->
-                    <!--android:textAppearance="?android:textAppearanceMedium" />-->
-                <!--<RadioButton-->
-                    <!--android:id="@+id/q4_c"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:text="Missouri River"-->
-                    <!--android:textSize="15sp"-->
-                    <!--android:onClick="incrementCount"-->
-                    <!--android:textAppearance="?android:textAppearanceMedium" />-->
+            <RadioGroup
+                android:id="@+id/qu_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <RadioButton
+                    android:id="@+id/q4_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Colorado River"
+                    android:textSize="15sp"
+                    android:onClick="decrementCount"
+                    android:textAppearance="?android:textAppearanceMedium" />
+                <RadioButton
+                    android:id="@+id/q4_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yukon River"
+                    android:textSize="15sp"
+                    android:onClick="decrementCount"
+                    android:textAppearance="?android:textAppearanceMedium" />
+                <RadioButton
+                    android:id="@+id/q4_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Missouri River"
+                    android:textSize="15sp"
+                    android:onClick="incrementCount"
+                    android:textAppearance="?android:textAppearanceMedium" />
 
-            <!--</RadioGroup>-->
+            </RadioGroup>
 
-        <!--</LinearLayout>-->
-
-
+        </LinearLayout>
 
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="12dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Which of these are continents?"
+                android:textColor="#212121"
+                android:textSize="16sp"/>
+
+            <CheckBox
+                android:id="@+id/continent_asia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Asia"
+                android:paddingLeft="24dp"
+                android:textSize="16sp"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <CheckBox
+                android:id="@+id/continent_germany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Germany"
+                android:paddingLeft="24dp"
+                android:textSize="16sp"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <CheckBox
+                android:id="@+id/continent_europe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Europe"
+                android:paddingLeft="24dp"
+                android:textSize="16sp"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="12dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Which is the longest river in the world?"
+            android:textColor="#212121"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/longest_river"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Answer Here"
+            android:inputType="textMultiLine" />
+    </LinearLayout>
 
 
         <Button
@@ -253,6 +286,33 @@
             android:textColor="#212121"
             android:onClick="submitQuiz"
             android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="8dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:text="Score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:padding="8dp"
+                android:textAllCaps="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textSize="20sp"
+                android:padding="8dp"
+                android:id="@+id/quiz_score"
+                />
+        </LinearLayout>
 
 
     </LinearLayout>

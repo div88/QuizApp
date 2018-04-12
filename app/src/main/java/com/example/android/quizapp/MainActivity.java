@@ -25,15 +25,35 @@ public class MainActivity extends AppCompatActivity {
     public void submitQuiz(View view) {
 
 
+
+        CheckBox continentAsia = (CheckBox) findViewById(R.id.continent_asia);
+        boolean isAsia = continentAsia.isChecked();
+
+        CheckBox continentEurope = (CheckBox) findViewById(R.id.continent_europe);
+        boolean isEurope = continentEurope.isChecked();
+
+        CheckBox notContinentGermany = (CheckBox) findViewById(R.id.continent_germany);
+        boolean isGermany = notContinentGermany.isChecked();
+
+        TextView longestRiverAns = (TextView) findViewById(R.id.longest_river);
+        if(longestRiverAns.toString() == "Nile"){
+            score = score + 1;
+        }
+
+        if(isAsia && isEurope && !isGermany){
+            score = score + 1;
+        } else if(isGermany){
+            score = score - 1;
+        }
+
         RadioGroup radioGroup = (RadioGroup) findViewById(R.id.qu_one);
         int selectedId = radioGroup.getCheckedRadioButtonId();
         String selectedValue = ((RadioButton)findViewById(radioGroup.getCheckedRadioButtonId())).getText().toString();
 
         displayScore();
+        
 
     }
-
-
 
 //    public void onRadioButtonClicked(View view) {
 //        // Is the button now checked?
@@ -60,11 +80,8 @@ public class MainActivity extends AppCompatActivity {
 //    }
 
     public void incrementCount(View view) {
-
         score = score + 1;
         Log.v("MainActivity","Count: " + score);
-
-
     }
 
     public void decrementCount(View view) {
